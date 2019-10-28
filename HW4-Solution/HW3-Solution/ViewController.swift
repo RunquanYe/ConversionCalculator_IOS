@@ -15,7 +15,7 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
     @IBOutlet weak var fromUnits: UILabel!
     @IBOutlet weak var toUnits: UILabel!
     @IBOutlet weak var calculatorHeader: UILabel!
-    
+    var entries : [Conversion] = []
     var currentMode : CalculatorMode = .Length
     
     override func viewDidLoad() {
@@ -68,6 +68,7 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
                     let toVal = fromVal * lengthConversionTable[convKey]!;
                     dest?.text = "\(toVal)"
                 }
+                
             case .Volume:
                 var fUnits, tUnits : VolumeUnit
                 if dest == toField {
