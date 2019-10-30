@@ -54,7 +54,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iXL-vW-dAc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="849"/>
+            <point key="canvasLocation" x="860" y="839"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -170,12 +170,12 @@
                     <navigationItem key="navigationItem" id="83L-dh-E5F">
                         <barButtonItem key="leftBarButtonItem" title="History" id="IpC-kz-REw">
                             <connections>
-                                <segue destination="Skv-7Y-Sad" kind="show" id="fJJ-Y8-GL1"/>
+                                <segue destination="Skv-7Y-Sad" kind="show" identifier="historySegue" id="fJJ-Y8-GL1"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="GTk-WH-GeF">
                             <connections>
-                                <segue destination="xmZ-sX-QFT" kind="show" id="Tn8-zE-COd"/>
+                                <segue destination="xmZ-sX-QFT" kind="show" identifier="settingSegue" id="Tn8-zE-COd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -189,7 +189,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1002" y="134"/>
+            <point key="canvasLocation" x="860" y="134"/>
         </scene>
         <!--Settings-->
         <scene sceneID="eD3-bB-1hb">
@@ -276,7 +276,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hd8-py-VgW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1825" y="127"/>
+            <point key="canvasLocation" x="1583" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jli-ck-vNT">
