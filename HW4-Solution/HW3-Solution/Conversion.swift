@@ -2,8 +2,8 @@
 //  Conversion.swift
 //  HW3-Solution
 //
-//  Created by Xcode User on 10/28/19.
-//  Copyright © 2019 Jonathan Engelsma. All rights reserved.
+//  Created by Runquan Ye User on 10/28/19.
+//  Copyright © 2019 Jonathan Engelsma, Runquan Ye. All rights reserved.
 //
 
 import Foundation
