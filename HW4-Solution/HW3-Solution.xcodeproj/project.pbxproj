@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		33B095DE236761AC001C28B5 /* Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33B095DD236761AC001C28B5 /* Conversion.swift */; };
+		33BC14F6236C6BE7007EEAC3 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BC14F5236C6BE7007EEAC3 /* HistoryTableViewCell.swift */; };
 		69965A9B236A9528002E0791 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69965A9A236A9528002E0791 /* HistoryTableViewController.swift */; };
 		9E1E65472142BF8800F4E8CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E65462142BF8800F4E8CB /* AppDelegate.swift */; };
 		9E1E65492142BF8800F4E8CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E65482142BF8800F4E8CB /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		33B095DD236761AC001C28B5 /* Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversion.swift; sourceTree = "<group>"; };
+		33BC14F5236C6BE7007EEAC3 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		69965A9A236A9528002E0791 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
 		9E1E65432142BF8800F4E8CB /* HW3-Solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HW3-Solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1E65462142BF8800F4E8CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				9EE845AF215BE2AD0091EFE4 /* ConversionCalcButton.swift */,
 				33B095DD236761AC001C28B5 /* Conversion.swift */,
 				69965A9A236A9528002E0791 /* HistoryTableViewController.swift */,
+				33BC14F5236C6BE7007EEAC3 /* HistoryTableViewCell.swift */,
 			);
 			path = "HW3-Solution";
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				9E1E65752142C38700F4E8CB /* DecimalMinusTextField.swift in Sources */,
 				9EE845AE215BE2820091EFE4 /* ConversionCalcLabel.swift in Sources */,
 				9E1E65492142BF8800F4E8CB /* ViewController.swift in Sources */,
+				33BC14F6236C6BE7007EEAC3 /* HistoryTableViewCell.swift in Sources */,
 				9E1E65792147122200F4E8CB /* SettingsViewController.swift in Sources */,
 				9E1E65472142BF8800F4E8CB /* AppDelegate.swift in Sources */,
 			);

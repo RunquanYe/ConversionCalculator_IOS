@@ -8,14 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController, SettingsViewControllerDelegate {
+class ViewController: UIViewController, SettingsViewControllerDelegate, HistoryTableViewControllerDelegate {
 
     @IBOutlet weak var fromField: UITextField!
     @IBOutlet weak var toField: UITextField!
     @IBOutlet weak var fromUnits: UILabel!
     @IBOutlet weak var toUnits: UILabel!
     @IBOutlet weak var calculatorHeader: UILabel!
-    var entries : [Conversion] = []
+    var entries : [Conversion] = [
+        Conversion(fromVal: 1, toVal: 1760, mode: .Length, fromUnits: LengthUnit.Miles.rawValue, toUnits:
+            LengthUnit.Yards.rawValue, timestamp: Date.distantPast),
+        Conversion(fromVal: 1, toVal: 4, mode: .Volume, fromUnits: VolumeUnit.Gallons.rawValue, toUnits:
+            VolumeUnit.Quarts.rawValue, timestamp: Date.distantFuture)]
+
     var currentMode : CalculatorMode = .Length
     
     override func viewDidLoad() {
@@ -135,6 +140,14 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
                 target.delegate = self
             }
         }
+        
+        if segue.identifier == "historySegue" {
+            //clearPressed(sender as! UIButton)
+            if let target = segue.destination as? HistoryTableViewController {
+                target.entries = entries
+                target.historyDelegate = self
+            }
+        }
     }
 
     func settingsChanged(fromUnits: LengthUnit, toUnits: LengthUnit)
@@ -148,6 +161,17 @@ class ViewController: UIViewController, SettingsViewControllerDelegate {
         self.fromUnits.text = fromUnits.rawValue
         self.toUnits.text = toUnits.rawValue
     }
+    
+    func selectEntry(entry: Conversion) {
+        self.fromUnits.text = entry.fromUnits
+        self.toUnits.text = entry.toUnits
+        
+        self.fromField.text = String (entry.fromVal)
+        self.toField.text = String (entry.toVal)
+        
+        self.calculatorHeader.text = "\(entry.mode.rawValue) Conversion Calculator"
+    }
+    
 }
 
 extension ViewController : UITextFieldDelegate {
